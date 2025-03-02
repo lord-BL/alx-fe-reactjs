@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-const useRecipeStore = create((set) => ({
+export const useRecipeStore = create((set) => ({
   recipes: [],
   searchTerm: "",
   filteredRecipes: [],
@@ -39,5 +39,3 @@ const useRecipeStore = create((set) => ({
       return { searchTerm: term, filteredRecipes: filtered };
     }),
 }));
-
-export default useRecipeStore;
