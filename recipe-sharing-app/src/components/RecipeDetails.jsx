@@ -2,7 +2,7 @@ import { useRecipeStore } from "./recipeStore";
 import { useParams, useNavigate } from "react-router-dom";
 import EditRecipeForm from "./EditRecipeForm";
 import DeleteRecipeButton from "./DeleteRecipeButton";
-
+import FavoriteButton from "./FavoriteButton";
 const RecipeDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -20,6 +20,7 @@ const RecipeDetails = () => {
       <p>{recipe.description}</p>
       <EditRecipeForm recipe={recipe} />
       <DeleteRecipeButton id={recipe.id} onDelete={() => navigate("/")} />
+      <FavoriteButton recipeId={recipeId} /> {/* ✅ Add favorite button */}
     </div>
   );
 };
