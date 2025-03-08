@@ -1,6 +1,6 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import RecipeList from "./components/RecipeList";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RecipeDetails from "./components/RecipeDetails";
 import AddRecipeForm from "./components/AddRecipeForm";
 import RecipeDetails from "./components/RecipeDetails";
 import EditRecipeForm from "./components/EditRecipeForm";
@@ -15,23 +15,25 @@ const App = () => {
         {/* Simple navigation */}
         <Link to="/">Home</Link>
       </nav>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              <h1>Recipe Sharing App</h1>
-              <SearchBar />
-              <RecipeList />
-              <AddRecipeForm />
-              <FavoritesList />
-              <RecommendationsList />
-            </div>
-          }
-        />
-        <Route path="/recipe/:id" element={<RecipeDetails />} />
-        <Route path="/edit/:id" element={<EditRecipeForm />} />
-      </Routes>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                <h1>Recipe Sharing App</h1>
+                <SearchBar />
+                <RecipeList />
+                <AddRecipeForm />
+                <FavoritesList />
+                <RecommendationsList />
+              </div>
+            }
+          />
+          <Route path="/recipe/:id" element={<RecipeDetails />} />
+          <Route path="/edit/:id" element={<EditRecipeForm />} />
+        </Routes>
+      </Router>
     </div>
   );
 };
