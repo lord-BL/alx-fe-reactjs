@@ -1,26 +1,36 @@
-import { useRecipeStore } from "./recipeStore";
-import { useParams, useNavigate } from "react-router-dom";
-import EditRecipeForm from "./EditRecipeForm";
+import React from "react";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import useRecipeStore from "./recipeStore";
 import DeleteRecipeButton from "./DeleteRecipeButton";
-import FavoriteButton from "./FavoriteButton";
+
 const RecipeDetails = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
+  const recipeId = parseInt(id);
   const recipe = useRecipeStore((state) =>
-    state.recipes.find((r) => r.id === parseInt(id))
+    state.recipes.find((recipe) => recipe.id === recipeId)
   );
+  const navigate = useNavigate();
 
   if (!recipe) {
-    return <p>Recipe not found!</p>;
+    return <div>Recipe not found.</div>;
   }
 
   return (
     <div>
       <h1>{recipe.title}</h1>
       <p>{recipe.description}</p>
-      <EditRecipeForm recipe={recipe} />
-      <DeleteRecipeButton id={recipe.id} onDelete={() => navigate("/")} />
-      <FavoriteButton recipeId={recipeId} /> {/* ✅ Add favorite button */}
+      <div>
+        {/* Link to edit recipe */}
+        <Link to={`/edit/${recipe.id}`}>Edit Recipe</Link>
+        {/* Delete button triggers deletion and navigates back to home */}
+        <DeleteRecipeButton
+          recipeId={recipe.id}
+          onDelete={() => navigate("/")}
+        />
+      </div>
+      <div>
+        <Link to="/">Back to Home</Link>
+      </div>
     </div>
   );
 };
