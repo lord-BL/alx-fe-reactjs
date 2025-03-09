@@ -5,6 +5,7 @@ const RegistrationForm = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -13,12 +14,25 @@ const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!formData.username || !formData.email || !formData.password) {
-      alert("All fields must be filled");
-      return;
+    let errors = {};
+
+    if (!username) {
+      errors.username = "Username is required";
     }
-    if (formData.password.length < 6) {
-      alert("Password must be at least 6 characters long");
+    if (!email) {
+      errors.email = "Email is required";
+    }
+    if (!password) {
+      errors.password = "Password is required";
+    }
+    if (password.length < 6) {
+      errors.password = "Password must be at least 6 characters long";
+    }
+
+    setErrors(errors);
+
+    if (Object.keys(errors).length === 0) {
+      console.log("Form submitted:", { username, email, password });
     }
     console.log("Form submitted:", formData);
   };
