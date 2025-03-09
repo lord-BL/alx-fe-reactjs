@@ -2,11 +2,10 @@ import React from "react";
 import { useState } from "react";
 
 const RegistrationForm = () => {
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    password: "",
-  });
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({ ...prevState, [name]: value }));
@@ -31,19 +30,19 @@ const RegistrationForm = () => {
         <input
           type="text"
           name="username"
-          value={formData.username}
+          value={username}
           onChange={handleChange}
         />
         <input
           type="email"
           name="email"
-          value={formData.email}
+          value={email}
           onChange={handleChange}
         />
         <input
           type="password"
           name="password"
-          value={formData.password}
+          value={password}
           onChange={handleChange}
         />
         <button type="Submit">Submit</button>
