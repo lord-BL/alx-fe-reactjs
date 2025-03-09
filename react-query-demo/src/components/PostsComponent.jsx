@@ -9,6 +9,10 @@ function PostsComponent() {
     // ✅ Renamed error to isError
     queryKey: ["fetchPosts"],
     queryFn: fetchPosts,
+    cacheTime: 1000 * 60 * 5, // 5 minutes
+    staleTime: 1000 * 60, // 1 minute
+    refetchOnWindowFocus: false, // Prevent refetching on window focus
+    keepPreviousData: true, // Keep
   });
 
   if (isLoading) return <div>Loading...</div>;
