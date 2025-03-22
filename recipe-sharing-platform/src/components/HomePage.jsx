@@ -4,7 +4,7 @@ import RecipeCard from "./RecipeCard";
 import recipeData from "../data.json";
 import RecipeDetail from "./RecipeDetail";
 import { Link } from "react-router-dom";
-
+import AddRecipeForm from "./AddRecipeForm";
 const HomePage = () => {
   const [recipes, setRecipes] = useState([]);
   useEffect(() => {
@@ -28,6 +28,7 @@ const HomePage = () => {
           ))}
         </div>
       </div>
+      <AddRecipeForm />
     </div>
   );
 };
