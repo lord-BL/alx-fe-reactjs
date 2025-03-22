@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
 import data from "../data.json"; // ✅ Import JSON directly
-import React from "react";
+import React, { useEffect } from "react";
 
 const RecipeDetail = () => {
   const { id } = useParams();
   const recipe = data.find((item) => item.id === parseInt(id)); // ✅ Find recipe using ID
-
+  useEffect;
   if (!recipe)
     return <p className="text-white text-center mt-5">Recipe not found.</p>;
 
