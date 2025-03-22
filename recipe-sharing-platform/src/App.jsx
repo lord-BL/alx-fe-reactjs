@@ -1,11 +1,11 @@
+import React from "react";
+import HomePage from "./components/HomePage";
+
 function App() {
   return (
-    <>
-      <div className="grid grid-cols-2 h-96">
-        <div className="bg-slate-600 text-blue-500">Hey</div>
-        <div className="bg-slate-800">hey again</div>
-      </div>
-    </>
+    <div className="bg-slate-600 text-blue-500 h-full">
+      <HomePage />
+    </div>
   );
 }
 

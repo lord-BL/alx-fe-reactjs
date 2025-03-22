@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "title": "Beef Stroganoff",
+    "summary": "A rich and creamy Russian dish with sautéed beef, mushrooms, and sour cream served over noodles or rice.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "title": "Margherita Pizza",
+    "summary": "A simple yet delicious pizza topped with tomatoes, mozzarella cheese, fresh basil, and olive oil.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 5,
+    "title": "Sushi Rolls",
+    "summary": "Traditional Japanese dish consisting of vinegared rice, raw or cooked seafood, and vegetables wrapped in seaweed.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 6,
+    "title": "Tacos Al Pastor",
+    "summary": "Mexican street food with marinated pork, pineapple, onions, and cilantro in a corn tortilla.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 7,
+    "title": "Pad Thai",
+    "summary": "A popular Thai stir-fried noodle dish with shrimp, tofu, eggs, peanuts, and a tangy tamarind sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 8,
+    "title": "French Onion Soup",
+    "summary": "A savory soup with caramelized onions, beef broth, and melted cheese on toasted bread.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 9,
+    "title": "Falafel Wrap",
+    "summary": "Crispy chickpea fritters wrapped in pita bread with tahini sauce, veggies, and pickles.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 10,
+    "title": "Ratatouille",
+    "summary": "A French vegetable stew made with zucchini, eggplant, bell peppers, and tomatoes.",
+    "image": "https://via.placeholder.com/150"
+  }
+]
