@@ -9,7 +9,7 @@ const HomePage = () => {
     setRecipes(recipeData);
   }, []);
   return (
-    <div className="bg-slate-600 text-blue-500 h-full">
+    <div className="bg-slate-600 text-blue-500 h-full grid-cols-2">
       <div>
         <h1 className="p-0.5 text-xl font-bold">
           Welcome to the Recipe Platform
