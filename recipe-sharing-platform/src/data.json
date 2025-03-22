@@ -3,60 +3,142 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta or bacon",
+      "2 large eggs",
+      "50g grated Parmesan cheese",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": "Cook spaghetti. Fry pancetta until crispy. Whisk eggs with Parmesan. Toss spaghetti with pancetta, then mix with egg mixture off heat. Serve immediately."
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g boneless chicken",
+      "1 cup plain yogurt",
+      "2 tbsp garam masala",
+      "1 onion, chopped",
+      "2 cups tomato puree",
+      "1/2 cup heavy cream"
+    ],
+    "instructions": "Marinate chicken in yogurt and spices for at least an hour. Grill until charred. In a pan, cook onions and tomato puree. Add grilled chicken and heavy cream. Simmer and serve."
   },
   {
     "id": 3,
     "title": "Beef Stroganoff",
     "summary": "A rich and creamy Russian dish with sautéed beef, mushrooms, and sour cream served over noodles or rice.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g beef sirloin, sliced",
+      "1 onion, chopped",
+      "200g mushrooms, sliced",
+      "1 cup sour cream",
+      "1 tbsp Dijon mustard",
+      "Salt and pepper to taste"
+    ],
+    "instructions": "Sauté onions and mushrooms. Add beef and cook until browned. Stir in sour cream and mustard. Simmer until thickened. Serve over noodles or rice."
   },
   {
     "id": 4,
     "title": "Margherita Pizza",
     "summary": "A simple yet delicious pizza topped with tomatoes, mozzarella cheese, fresh basil, and olive oil.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "1 pizza dough",
+      "1/2 cup tomato sauce",
+      "200g mozzarella cheese",
+      "Fresh basil leaves",
+      "Olive oil"
+    ],
+    "instructions": "Spread tomato sauce on pizza dough. Add mozzarella cheese. Bake at 220°C (425°F) for 10-15 minutes. Top with fresh basil and drizzle with olive oil."
   },
   {
     "id": 5,
     "title": "Sushi Rolls",
     "summary": "Traditional Japanese dish consisting of vinegared rice, raw or cooked seafood, and vegetables wrapped in seaweed.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "2 cups sushi rice",
+      "4 sheets nori (seaweed)",
+      "200g raw or cooked seafood",
+      "1 cucumber, sliced",
+      "Soy sauce, wasabi, pickled ginger"
+    ],
+    "instructions": "Spread sushi rice on nori sheet. Add seafood and cucumber. Roll tightly and slice into pieces. Serve with soy sauce, wasabi, and pickled ginger."
   },
   {
     "id": 6,
     "title": "Tacos Al Pastor",
     "summary": "Mexican street food with marinated pork, pineapple, onions, and cilantro in a corn tortilla.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g pork shoulder, thinly sliced",
+      "2 tbsp achiote paste",
+      "1/2 cup pineapple juice",
+      "1 onion, chopped",
+      "Corn tortillas"
+    ],
+    "instructions": "Marinate pork in achiote paste and pineapple juice. Grill until slightly charred. Serve on corn tortillas with chopped onions and cilantro."
   },
   {
     "id": 7,
     "title": "Pad Thai",
     "summary": "A popular Thai stir-fried noodle dish with shrimp, tofu, eggs, peanuts, and a tangy tamarind sauce.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g rice noodles",
+      "200g shrimp or tofu",
+      "2 eggs",
+      "3 tbsp tamarind paste",
+      "1/4 cup peanuts, crushed"
+    ],
+    "instructions": "Cook rice noodles. Sauté shrimp/tofu. Push to side, scramble eggs. Add noodles and tamarind paste. Stir-fry, then top with crushed peanuts."
   },
   {
     "id": 8,
     "title": "French Onion Soup",
     "summary": "A savory soup with caramelized onions, beef broth, and melted cheese on toasted bread.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "4 onions, sliced",
+      "4 cups beef broth",
+      "2 tbsp butter",
+      "Baguette slices",
+      "Gruyère cheese"
+    ],
+    "instructions": "Caramelize onions in butter. Add beef broth and simmer. Pour soup into bowls, top with baguette slices and cheese, then broil until melted."
   },
   {
     "id": 9,
     "title": "Falafel Wrap",
     "summary": "Crispy chickpea fritters wrapped in pita bread with tahini sauce, veggies, and pickles.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "2 cups chickpeas",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 tsp cumin",
+      "Pita bread"
+    ],
+    "instructions": "Blend chickpeas, onion, garlic, and cumin. Shape into balls and fry until golden. Serve in pita bread with tahini sauce and vegetables."
   },
   {
     "id": 10,
     "title": "Ratatouille",
     "summary": "A French vegetable stew made with zucchini, eggplant, bell peppers, and tomatoes.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "1 zucchini, sliced",
+      "1 eggplant, sliced",
+      "1 bell pepper, chopped",
+      "2 tomatoes, chopped",
+      "2 tbsp olive oil"
+    ],
+    "instructions": "Sauté all vegetables in olive oil. Simmer until soft and flavors meld together. Serve warm."
   }
 ]
