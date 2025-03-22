@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import RecipeCard from "./RecipeCard";
 import recipeData from "../data.json";
 import RecipeDetail from "./RecipeDetail";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [recipes, setRecipes] = useState([]);
