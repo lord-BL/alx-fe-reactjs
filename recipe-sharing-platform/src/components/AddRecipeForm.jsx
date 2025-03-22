@@ -48,7 +48,9 @@ const AddRecipeForm = () => {
         <input
           type="text"
           id="title"
-          className={`form-input ${errors.title ? "border-red-500" : ""}`}
+          className={`form-input ${
+            errors.title ? "border-red-500 shadow-md" : ""
+          }`}
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
