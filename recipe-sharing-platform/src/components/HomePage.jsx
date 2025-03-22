@@ -14,7 +14,7 @@ const HomePage = () => {
         <h1 className="p-0.5 text-xl font-bold">
           Welcome to the Recipe Platform
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 m-2.5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 m-2.5 hover:shadow-sm rounded-lg shadow-sm">
           {recipes.map((recipe) => (
             <RecipeCard
               key={recipe.id}

@@ -2,7 +2,7 @@ import React from "react";
 
 const RecipeCard = ({ id, title, summary, image }) => {
   return (
-    <div className="bg-white  rounded-lg border border-gray-600 shadow-sm hover:shadow-lg w-72 h-full m-3 ">
+    <div className="bg-white  rounded-lg border border-gray-600 shadow-sm hover:shadow-lg w-72 h-full m-3 hover:ease-in-out">
       <img
         src={image}
         alt="Recipe Image"
