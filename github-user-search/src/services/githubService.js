@@ -1,13 +1,11 @@
 // services/githubService.js
-import axios from "axios";
-
-const GITHUB_API_BASE_URL = "https://api.github.com/search/users";
+const GITHUB_API_BASE_URL = "https://api.github.com/search/users?q=";
 
 const githubService = {
   async searchUsers(query) {
     try {
       const response = await axios.get(
-        `${GITHUB_API_BASE_URL}?q=${encodeURIComponent(query)}`
+        `${GITHUB_API_BASE_URL}${encodeURIComponent(query)}`
       );
       return response.data;
     } catch (error) {
