@@ -1,15 +1,11 @@
-import React from "react";
-import HomePage from "./components/HomePage";
-import RecipeDetail from "./components/RecipeDetail.jsx";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import News from "./components/News";
+
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/recipe/:id" element={<RecipeDetail />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <h1>API Test</h1>
+      <News />
+    </div>
   );
 }
 
