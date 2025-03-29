@@ -11,7 +11,7 @@ function Search() {
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
 
-  const handleSubmit = async (event) => {
+  const fetchUserData = async (event) => {
     event.preventDefault();
     setLoading(true);
     setError(null);
@@ -47,7 +47,7 @@ function Search() {
 
   return (
     <div className="p-4">
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={fetchUserData} className="space-y-4">
         {/* Input fields */}
         <div>
           <label
